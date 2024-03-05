@@ -1,0 +1,535 @@
+:root {
+  --color-palette-1: #fbffa7;
+  --color-palette-2: #b1c5ff;
+  --color-palette-3: #b6ffc0;
+  --color-palette-4: #ff764d;
+  --color-palette-5: #d5b3ff;
+  --color-palette-6: #0000ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 22px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#myBtn:hover {
+  background-color: #272727;
+}
+
+img {
+  image-rendering: crisp-edges;
+}
+
+/* Mobile */
+
+.c-header {
+  padding: 10px 20px;
+  border-bottom: 1px solid #d5b3ff;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar .main-nav__logo>.main-nav__logo__image {
+  width: 63px;
+  height: 42px;
+}
+
+.nav-bar .main-nav__btn-menu {
+  display: block;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.c-list-nav {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  left: 0;
+  text-align: right;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  width: 100%;
+}
+
+#unordered-list>.list-nav {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.list-nav {
+  cursor: pointer;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-nav:hover {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+main {
+  border-bottom: 1px solid var(--color-palette-5);
+}
+
+.page-about {
+  /* padding: 10px 30px;s */
+}
+
+.page-about__header {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-about__img-banner {
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  height: 44%;
+}
+
+.page-about__header__ableton-logo {
+  height: 200px;
+  width: 200px;
+}
+
+.page-about__text {
+  padding: 30px;
+}
+
+.page-about__text h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.page-about__collage {
+  position: relative;
+  margin: 50px 0px;
+}
+
+.page-about__collage__background {
+  width: 60%;
+  height: 300px;
+  z-index: 1;
+}
+
+.bg-lemonade {
+  /* margin-left: 50px */
+}
+
+.bg-lightgreen {
+  margin-left: 40%;
+  height: 58vh;
+}
+
+.page_about__collage__container,
+.page-about__collage__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page_about__collage__container {
+  z-index: 2;
+}
+
+.page-about__collage__media img {
+  text-align: center;
+}
+
+.bg-lemonade {
+  background-color: var(--color-palette-1);
+}
+
+.bg-lightgreen {
+  background-color: var(--color-palette-3);
+}
+
+.img-section-one {
+  height: 230px;
+  margin-top: 7%;
+  margin-left: 53px;
+}
+
+.img-section-two {
+  height: 150px;
+  margin-left: 54%;
+  margin-top: 65px;
+}
+
+.page-about__media {
+  display: flex;
+  justify-content: center;
+}
+
+.page-about__media iframe {
+  border-radius: 10px;
+}
+
+.media-img-lightgreen-1,
+.media-img-lightgreen-2,
+.media-img-lightgreen-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.img-people-1 {
+  margin-left: 57%;
+  margin-top: 10%;
+  height: 140px;
+}
+
+.img-people-2 {
+  margin-left: 57%;
+  margin-top: 50%;
+  height: 140px;
+}
+
+.img-people-3 {
+  margin-left: 5%;
+  margin-top: 21%;
+  height: 230px;
+}
+
+.page-about__jobs-teaser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 60px 0;
+  padding: 0 30px;
+}
+
+.page-about__jobs-teaser__media {
+  width: 100%;
+  height: 262px;
+}
+
+.page-about__jobs-teaser__media .img-jobs-info {
+  width: 100%;
+}
+
+.page-about__jobs-teaser__text {
+  background-color: var(--color-palette-2);
+  padding: 50px;
+}
+
+.page-about__jobs-teaser__text,
+.body-text>h1 {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* footer */
+
+/* Estilos generales del footer */
+footer {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+}
+
+.main-footer__container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilos para las secciones del footer */
+.main-footer__contents {
+  text-align: center;
+}
+
+.main-footer__row {
+  margin-bottom: 20px;
+}
+
+/* Estilos para los títulos */
+.main-footer__col h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+.main-footer__form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+
+label {
+  /* padding: 10px;
+  margin: 20px 0px; */
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.main-footer__button {
+  background-color: var(--color-palette-6);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.main-footer__button:hover {
+  background-color: #0101bd;
+}
+
+/* Estilos para las redes sociales */
+.main-footer__socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__social-listitem {
+  margin: 0 10px;
+}
+
+.main-footer__social-button {
+  color: #000;
+  font-size: 1.5em;
+}
+
+/* Estilos para el logo y la firma */
+.main-footer__secondary__signature__logo {
+  margin-bottom: 10px;
+}
+
+.main-footer__secondary__signature__logo .main-nav__logo__image {
+  fill: #000;
+}
+
+.main-footer__secondary__signature__developer {
+  font-size: 1.1em;
+}
+
+.main-footer__secondary__signature__developer a {
+  color: blueviolet;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.main-footer__secondary__signature__developer a:hover {
+  text-decoration: underline;
+}
+
+/* FIN MOBILE */
+
+/* MODO DESKTOP */
+
+@media only screen and (min-width: 1000px) {
+  #main {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  body {
+    background-color: #f3f3f3;
+  }
+
+  main,
+  .header-starts {
+    background-color: #fff;
+  }
+
+  .c-header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .nav-bar .main-nav__btn-menu {
+    display: none;
+  }
+
+  .c-list-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: 0;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #unordered-list {
+    display: flex;
+  }
+
+  #unordered-list>.list-nav {
+    width: auto;
+    font-weight: 600;
+    font-size: 19px;
+  }
+
+  .page-about__img-banner {
+    z-index: 0;
+    width: 80%;
+    height: 100%;
+  }
+
+  .page-about__header__ableton-logo {
+    z-index: 1;
+    width: 350px;
+  }
+
+  .page-about__header {
+    height: 115vh;
+  }
+
+  .page-about__text {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .body-text>h1 {
+    font-size: 28px;
+  }
+
+  .body-text>p {
+    font-size: 18px;
+  }
+
+  .page-about__collage__background {
+    width: 60%;
+    height: 800px;
+  }
+
+  .img-section-one {
+    height: 700px;
+    margin-top: 3%;
+    margin-left: 7.90%;
+  }
+
+  .img-section-two {
+    height: 450px;
+    margin-left: 49.95%;
+    margin-top: 165px;
+  }
+
+  .page-about__media {
+    padding: 100px 0px;
+  }
+
+  .page-about__media iframe {
+    width: 50%;
+    height: 450px;
+  }
+
+  .img-people-1 {
+    margin-left: 67%;
+    margin-top: 2%;
+    height: 300px;
+  }
+
+  .img-people-2 {
+    margin-left: 67%;
+    margin-top: 29%;
+    height: 300px;
+  }
+
+  .img-people-3 {
+    margin-left: 8%;
+    margin-top: 6.5%;
+    height: 600px;
+  }
+
+  .page-about__jobs-teaser {
+    margin: 0 6.1%;
+    flex-direction: row;
+    align-items: flex-start;
+    width: auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+
+  .page-about__jobs-teaser__media {
+    height: 356px;
+  }
+
+  .page-about__jobs-teaser__text {
+    padding: 0;
+    height: 357px;
+    display: flex;
+    align-items: center;
+  }
+
+  .page-about__jobs-teaser__text .body-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .main-footer__container {
+    max-width: none;
+    margin: 0;
+  }
+  
+  .main-footer__contents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
